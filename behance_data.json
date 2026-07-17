@@ -1,0 +1,342 @@
+{
+  "owner": {
+    "name": "Millee Kesarwani",
+    "url": "https://www.linkedin.com/in/millee-kesarwani-a92948321",
+    "location": "Prayagraj, Uttar Pradesh, India",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Millee"
+  },
+  "project": {
+    "title": "MILLEE'S PORTFOLIO 2026",
+    "description": "Computer Science undergraduate portfolio showcasing IoT systems, Python applications, and web development projects.",
+    "publishedDate": "March 18th 2026",
+    "stats": {
+      "appreciations": "2.6K",
+      "views": "52.8K",
+      "comments": "34"
+    }
+  },
+  "tools": [
+    "Python",
+    "C++",
+    "JavaScript",
+    "IoT & ESP32",
+    "Figma",
+    "Photoshop",
+    "Git",
+    "VS Code"
+  ],
+  "tags": [
+    "Computer Science",
+    "Python",
+    "IoT",
+    "Web Development",
+    "Embedded Systems",
+    "UI/UX Design",
+    "Smart Lock",
+    "Branding",
+    "Graphic Design"
+  ],
+  "education": [
+    {
+      "degree": "BTech in Computer Science and Engineering",
+      "institution": "Chandigarh University",
+      "location": "Gharuan, Punjab, India",
+      "period": "Aug 2024 – June 2028",
+      "grade": "CGPA: 8.27/10"
+    },
+    {
+      "degree": "Class 12 CBSE (PCM with Computer Science)",
+      "institution": "Maharishi Patanjali Vidya Mandir",
+      "location": "Prayagraj, India",
+      "period": "Apr 2022 – Mar 2023",
+      "grade": "Score: 80%"
+    },
+    {
+      "degree": "Class 10 ICSE (Science)",
+      "institution": "Prabhat Academy",
+      "location": "Pratapgarh, India",
+      "period": "Apr 2020 – Mar 2021",
+      "grade": "Score: 96.5%"
+    }
+  ],
+  "skillsList": {
+    "Languages": ["C++", "Python", "C", "Java", "JavaScript", "HTML", "SQL"],
+    "Web Dev & UI/UX": ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Portfolio Development", "UI/UX Design"],
+    "IoT & Embedded": ["ESP32", "Sensors Integration", "MQTT", "IoT Protocols", "Smart Systems"],
+    "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "Coursera", "Figma", "Canva", "Adobe Photoshop", "Adobe Illustrator"],
+    "Soft Skills": ["Team Leadership", "Negotiation", "Persuasion", "Active Listening", "Problem Solving"]
+  },
+  "projectsList": [
+    {
+      "title": "Smart Lock System",
+      "category": "IoT & Embedded",
+      "period": "Jan 2025 – Mar 2025",
+      "description": "IoT-based secure access control system using ESP32 microcontroller",
+      "points": [
+        "Designed and developed a smart lock system integrating ESP32 with sensors and IoT for secure access control",
+        "Implemented real-time sensor data processing for authentication and automated locking mechanisms",
+        "Built hardware-software integration pipeline using Python for backend logic and ESP32 for embedded control"
+      ]
+    },
+    {
+      "title": "Online Streaming Platform",
+      "category": "Python Development",
+      "period": "Oct 2024 – Dec 2024",
+      "description": "Python-based streaming application with mood-driven features",
+      "points": [
+        "Built a streaming platform inspired by Python with mood control and emoji depiction capabilities",
+        "Implemented content recommendation logic based on user mood selection and interaction patterns",
+        "Designed intuitive user interface for seamless media streaming and mood-based filtering"
+      ]
+    },
+    {
+      "title": "Personal Portfolio Website",
+      "category": "Web Design",
+      "period": "Aug 2024 – Sept 2024",
+      "description": "Responsive portfolio website built with HTML and CSS",
+      "points": [
+        "Designed and developed a personal portfolio website using HTML for structure and CSS for layout and styling",
+        "Implemented responsive design principles ensuring cross-device compatibility",
+        "Created clean typography and visual hierarchy for professional presentation"
+      ]
+    }
+  ],
+  "achievementsList": [
+    "Working as a Lead Graphic Designer Intern at Match Blindly, creating impactful branding and social media creatives for the startup.",
+    "Hackathon: Participated in 4+ national-level hackathons across North India.",
+    "IEEE Community: Active member of IEEE Community at Chandigarh University.",
+    "Academic Excellence: 96.5% in Class 10 ICSE.",
+    "AlgoWars Coding Competition: Finalist at Chandigarh University."
+  ],
+  "certifications": [
+    "Python Programming Course - Coursera (Problem-solving and project applications)",
+    "IoT Hands-on Workshop - Certificate of Completion, Chandigarh University",
+    "Ethical Hacking Certification - Infosys"
+  ],
+  "extracurricular": [
+    "Active member of IEEE Community, Chandigarh University",
+    "Attended IoT Workshops at Chandigarh University",
+    "Interests: Writing, Sketching, Travelling, Reading",
+    "Languages: English, Hindi",
+    "Volunteered as a Social Media Designer for the C-DAC Bug Bounty 36-Hour Challenge."
+  ],
+  "modules": [
+    {
+      "index": 0,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/c79698246043667.69c386232929b.gif",
+      "alt": "Intro cover animation",
+      "width": 1401,
+      "height": 991
+    },
+    {
+      "index": 1,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/d280a1246043667.69c38b68642c4.png",
+      "alt": "Introduction profile page",
+      "width": 1401,
+      "height": 2565
+    },
+    {
+      "index": 2,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/8fe7e1246043667.69c3810391c1e.gif",
+      "alt": "Project 1 animation",
+      "width": 1401,
+      "height": 1235
+    },
+    {
+      "index": 3,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/c8a417246043667.69bd517ecf330.png",
+      "alt": "Project 1 details",
+      "width": 1401,
+      "height": 3721
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/4cb70c246043667.69bd517ed01f7.png",
+      "alt": "Project 1 mockups",
+      "width": 1401,
+      "height": 3263
+    },
+    {
+      "index": 5,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/f93b65246043667.69bd517ed2e73.png",
+      "alt": "Project 2 cover",
+      "width": 1401,
+      "height": 2774
+    },
+    {
+      "index": 6,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/921b5e246043667.69c381039290c.png",
+      "alt": "Project 2 branding",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 7,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/600666246043667.69c3810393616.gif",
+      "alt": "Project 2 animation",
+      "width": 1401,
+      "height": 593
+    },
+    {
+      "index": 8,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/138cd8246043667.69bd517ed1e7b.png",
+      "alt": "Project 2 magazine",
+      "width": 1401,
+      "height": 3730
+    },
+    {
+      "index": 9,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/18fa98246043667.69c381038ee9a.gif",
+      "alt": "Project 3 animation",
+      "width": 1401,
+      "height": 1327
+    },
+    {
+      "index": 10,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/e42dd8246043667.69c3810390f21.png",
+      "alt": "Project 3 illustrations",
+      "width": 1401,
+      "height": 3160
+    },
+    {
+      "index": 11,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/05115c246043667.69c38de5763a5.gif",
+      "alt": "Project 4 animation",
+      "width": 1401,
+      "height": 1051
+    },
+    {
+      "index": 12,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/955165246043667.69c38de575f06.png",
+      "alt": "Project 4 character sheets",
+      "width": 1401,
+      "height": 1051
+    },
+    {
+      "index": 13,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/19d35a246043667.69c3810390218.gif",
+      "alt": "Project 5 animation",
+      "width": 1401,
+      "height": 1000
+    },
+    {
+      "index": 14,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/5561d5246043667.69c381038e80a.png",
+      "alt": "Project 5 poster",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 15,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/1ec3ad246043667.69c381039229e.gif",
+      "alt": "Project 6 animation",
+      "width": 1401,
+      "height": 1000
+    },
+    {
+      "index": 16,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/8d7c63246043667.69c381038db45.png",
+      "alt": "Project 6 design",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 17,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/b21c9e246043667.69c381038fb52.png",
+      "alt": "Project 7 illustration",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 18,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/4b6997246043667.69c381038ce03.gif",
+      "alt": "Project 8 animation",
+      "width": 1401,
+      "height": 1000
+    },
+    {
+      "index": 19,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/db0aa8246043667.69c3810393ca3.png",
+      "alt": "Project 8 graphics",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 20,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/94f28d246043667.69bd517ed48d9.png",
+      "alt": "Project 9 cover",
+      "width": 1401,
+      "height": 2774
+    },
+    {
+      "index": 21,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/1bd533246043667.69c6a66ba08ef.png",
+      "alt": "Project 9 layouts",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 22,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/e83da9246043667.69c381038d493.gif",
+      "alt": "Project 10 animation",
+      "width": 1401,
+      "height": 1000
+    },
+    {
+      "index": 23,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/44cc14246043667.69c38103915c9.png",
+      "alt": "Project 10 cover",
+      "width": 1401,
+      "height": 1983
+    },
+    {
+      "index": 24,
+      "type": "image",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/fa0f74246043667.69c3862328d8e.gif",
+      "alt": "Outro cover animation",
+      "width": 1401,
+      "height": 991
+    }
+  ],
+  "textBlock": {
+    "text": "EMAIL: milleekesarwani10688@gmail.com\n\nLINKEDIN: millee-kesarwani-a92948321\n\nLEETCODE: Millee1_kesarwani\n\nHOPE WE CAN WORK TOGETHER ^^",
+    "links": [
+      {
+        "text": "milleekesarwani10688@gmail.com",
+        "href": "mailto:milleekesarwani10688@gmail.com"
+      },
+      {
+        "text": "millee-kesarwani-a92948321",
+        "href": "https://www.linkedin.com/in/millee-kesarwani-a92948321"
+      },
+      {
+        "text": "Millee1_kesarwani",
+        "href": "https://leetcode.com/u/Millee1_kesarwani"
+      }
+    ]
+  }
+}

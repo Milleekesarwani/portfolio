@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MILLEE KESARWANI :: Portfolio 2026</title>
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Additional inline styles to polish and supplement index.css if needed */
+    .behance-logo svg {
+      height: 18px;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .heart-icon {
+      transition: transform 0.2s ease;
+    }
+    .btn-appreciate:hover .heart-icon {
+      transform: scale(1.15);
+    }
+    .btn-appreciate.appreciated .heart-icon {
+      animation: pulse-heart 0.4s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Glass Header -->
+  <header>
+    <div class="header-left">
+      <a href="https://www.behance.net" target="_blank" class="behance-logo" aria-label="Behance Home">
+        <!-- High-fidelity inline Behance SVG -->
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.22 5c-1.3 0-2.38.35-3.24 1.05C4.12 6.75 3.7 7.7 3.7 8.9c0 1.05.32 1.9.96 2.5.54.52 1.25.86 2.12.98v.1c-1.07.16-1.92.57-2.55 1.2-.6.64-.92 1.48-.92 2.53 0 1.34.46 2.4 1.37 3.16S6.9 20.5 8.42 20.5c1.17 0 2.16-.23 3-.7s1.42-1.12 1.76-1.96c.2-.5.3-1.15.3-1.95v-7.1c0-1.23-.42-2.18-1.25-2.84C11.4 5.33 10 5 8.22 5zm-.2 2.54c.66 0 1.13.12 1.43.37.3.24.45.66.45 1.24s-.15 1-.45 1.25c-.3.25-.77.38-1.43.38H6.52V7.54H8zm.24 5.92c.76 0 1.3.15 1.63.45.32.3.48.8.48 1.48 0 .63-.16 1.12-.48 1.43-.32.3-.87.46-1.63.46H6.52v-3.82h1.72zm9.1-3.32c-1.46 0-2.58.42-3.37 1.26S12.8 13.56 12.8 15c0 1.38.38 2.45 1.14 3.2.76.76 1.83 1.14 3.22 1.14 1.16 0 2.1-.26 2.8-.78a4.9 4.9 0 0 0 1.73-2.18h-2.3c-.26.54-.73.8-1.42.8-.46 0-.82-.12-1.1-.38-.27-.25-.43-.65-.47-1.18H20.6c.03-.23.04-.44.04-.64 0-1.43-.36-2.5-1.1-3.23-.73-.73-1.8-1.1-3.18-1.1zm-.05 2.18c.45 0 .8.12 1.05.37.24.25.38.64.4 1.18h-2.92c.04-.54.18-.93.42-1.18.25-.25.6-.37 1.05-.37zM14.07 9.07h6.63V7.75h-6.63v1.32z"/>
+        </svg>
+      </a>
+      <div class="header-divider"></div>
+      <div class="project-meta">
+        <img class="author-avatar" id="header-avatar" src="" alt="Author Avatar">
+        <div class="meta-details">
+          <span class="project-title" id="header-project-title"></span>
+          <a class="author-name" id="header-author-name" href="" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="btn btn-secondary" id="header-follow-btn">Follow</button>
+      <button class="btn btn-primary btn-appreciate" id="header-appreciate-btn">
+        <svg class="heart-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span>Appreciate</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Showcase Container -->
+  <main>
+    <div class="project-container">
+      <!-- Hover Overlay Menu -->
+      <div class="view-behance-overlay">
+        <a class="overlay-btn" id="overlay-behance-link" href="" target="_blank">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M8.22 5c-1.3 0-2.38.35-3.24 1.05C4.12 6.75 3.7 7.7 3.7 8.9c0 1.05.32 1.9.96 2.5.54.52 1.25.86 2.12.98v.1c-1.07.16-1.92.57-2.55 1.2-.6.64-.92 1.48-.92 2.53 0 1.34.46 2.4 1.37 3.16S6.9 20.5 8.42 20.5c1.17 0 2.16-.23 3-.7s1.42-1.12 1.76-1.96c.2-.5.3-1.15.3-1.95v-7.1c0-1.23-.42-2.18-1.25-2.84C11.4 5.33 10 5 8.22 5zm-.2 2.54c.66 0 1.13.12 1.43.37.3.24.45.66.45 1.24s-.15 1-.45 1.25c-.3.25-.77.38-1.43.38H6.52V7.54H8zm.24 5.92c.76 0 1.3.15 1.63.45.32.3.48.8.48 1.48 0 .63-.16 1.12-.48 1.43-.32.3-.87.46-1.63.46H6.52v-3.82h1.72zm9.1-3.32c-1.46 0-2.58.42-3.37 1.26S12.8 13.56 12.8 15c0 1.38.38 2.45 1.14 3.2.76.76 1.83 1.14 3.22 1.14 1.16 0 2.1-.26 2.8-.78a4.9 4.9 0 0 0 1.73-2.18h-2.3c-.26.54-.73.8-1.42.8-.46 0-.82-.12-1.1-.38-.27-.25-.43-.65-.47-1.18H20.6c.03-.23.04-.44.04-.64 0-1.43-.36-2.5-1.1-3.23-.73-.73-1.8-1.1-3.18-1.1zm-.05 2.18c.45 0 .8.12 1.05.37.24.25.38.64.4 1.18h-2.92c.04-.54.18-.93.42-1.18.25-.25.6-.37 1.05-.37zM14.07 9.07h6.63V7.75h-6.63v1.32z"/>
+          </svg>
+          View on Behance
+        </a>
+      </div>
+
+      <!-- Project Modules Stack -->
+      <div class="project-modules" id="modules-container">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Developer Portfolio Sections -->
+      <div class="developer-showcase">
+        <section class="cv-section" id="developer-projects">
+          <h2 class="cv-section-title">Featured Developer Projects</h2>
+          <div class="projects-grid" id="cv-projects-container">
+            <!-- Rendered dynamically -->
+          </div>
+        </section>
+
+        <section class="cv-section" id="developer-skills">
+          <h2 class="cv-section-title">Skills & Expertise</h2>
+          <div class="skills-grid" id="cv-skills-container">
+            <!-- Rendered dynamically -->
+          </div>
+        </section>
+
+        <div class="cv-double-column">
+          <section class="cv-section" id="developer-education">
+            <h2 class="cv-section-title">Education & Academic Timeline</h2>
+            <div class="timeline" id="cv-education-container">
+              <!-- Rendered dynamically -->
+            </div>
+          </section>
+
+          <section class="cv-section" id="developer-achievements">
+            <h2 class="cv-section-title">Achievements & Certifications</h2>
+            <div class="achievements-card" id="cv-achievements-container">
+              <!-- Rendered dynamically -->
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Centered Text Module at Bottom of stack -->
+      <div class="text-module">
+        <div class="text-content-wrapper" id="text-block-content">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="project-footer">
+      <!-- Left Profile Card -->
+      <div class="footer-card">
+        <div class="profile-section">
+          <img class="profile-avatar-large" id="footer-avatar" src="" alt="Profile Large Avatar">
+          <div class="profile-info">
+            <h2 class="profile-name" id="footer-profile-name"></h2>
+            <div class="profile-loc">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span id="footer-location"></span>
+            </div>
+            <p class="profile-bio">
+              Computer Science Undergraduate at Chandigarh University | IoT Enthusiast & Python Developer. Finalist in AlgoWars Coding Competition and Lead Graphic Designer Intern at Match Blindly. Passionate about smart systems, C++, Python, and full-stack development.
+            </p>
+            
+            <div class="designer-stats">
+              <div class="stat-item">
+                <span class="stat-val" id="profile-stat-appreciations">0</span>
+                <span class="stat-lbl">Project Appreciations</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="profile-stat-views">0</span>
+                <span class="stat-lbl">Project Views</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="profile-stat-followers">4.2K</span>
+                <span class="stat-lbl">Followers</span>
+              </div>
+            </div>
+
+            <div class="designer-tools">
+              <div class="tools-title">Tools Used</div>
+              <div class="tools-list" id="footer-tools-list">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Project Metadata Card -->
+      <div class="footer-card metadata-card">
+        <div class="meta-stats-box">
+          <div class="project-stats-grid">
+            <div class="proj-stat">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span class="proj-stat-val" id="meta-stat-appreciations">0</span>
+              <span class="proj-stat-lbl">Appreciations</span>
+            </div>
+            <div class="proj-stat">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span class="proj-stat-val" id="meta-stat-views">0</span>
+              <span class="proj-stat-lbl">Views</span>
+            </div>
+            <div class="proj-stat">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span class="proj-stat-val" id="meta-stat-comments">0</span>
+              <span class="proj-stat-lbl">Comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="appreciate-action-container">
+          <button class="btn btn-primary btn-appreciate" id="footer-appreciate-btn" style="width: 100%; padding: 12px 24px; font-size: 14px;">
+            <svg class="heart-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Appreciate</span>
+          </button>
+          <p>Appreciate to show your support for Millee Kesarwani's work</p>
+        </div>
+
+        <div class="footer-tags">
+          <div class="tags-title">Tags</div>
+          <div class="tags-list" id="footer-tags-list">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal Component -->
+  <div class="lightbox" id="gallery-lightbox">
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev-btn" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+    
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img class="lightbox-img" id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Enlarged View">
+    </div>
+
+    <button class="lightbox-nav lightbox-next" id="lightbox-next-btn" aria-label="Next image">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    // Embedded behance_data.json data fallback for seamless local execution
+    const behanceData = {
+      "owner": {
+        "name": "Millee Kesarwani",
+        "url": "https://www.linkedin.com/in/millee-kesarwani-a92948321",
+        "location": "Prayagraj, Uttar Pradesh, India",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Millee"
+      },
+      "project": {
+        "title": "MILLEE'S PORTFOLIO 2026",
+        "description": "Computer Science undergraduate portfolio showcasing IoT systems, Python applications, and web development projects.",
+        "publishedDate": "March 18th 2026",
+        "stats": {
+          "appreciations": "2.6K",
+          "views": "52.8K",
+          "comments": "34"
+        }
+      },
+      "tools": [
+        "Python",
+        "C++",
+        "JavaScript",
+        "IoT & ESP32",
+        "Figma",
+        "Photoshop",
+        "Git",
+        "VS Code"
+      ],
+      "tags": [
+        "Computer Science",
+        "Python",
+        "IoT",
+        "Web Development",
+        "Embedded Systems",
+        "UI/UX Design",
+        "Smart Lock",
+        "Branding",
+        "Graphic Design"
+      ],
+      "education": [
+        {
+          "degree": "BTech in Computer Science and Engineering",
+          "institution": "Chandigarh University",
+          "location": "Gharuan, Punjab, India",
+          "period": "Aug 2024 – June 2028",
+          "grade": "CGPA: 8.27/10"
+        },
+        {
+          "degree": "Class 12 CBSE (PCM with Computer Science)",
+          "institution": "Maharishi Patanjali Vidya Mandir",
+          "location": "Prayagraj, India",
+          "period": "Apr 2022 – Mar 2023",
+          "grade": "Score: 80%"
+        },
+        {
+          "degree": "Class 10 ICSE (Science)",
+          "institution": "Prabhat Academy",
+          "location": "Pratapgarh, India",
+          "period": "Apr 2020 – Mar 2021",
+          "grade": "Score: 96.5%"
+        }
+      ],
+      "skillsList": {
+        "Languages": ["C++", "Python", "C", "Java", "JavaScript", "HTML", "SQL"],
+        "Web Dev & UI/UX": ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Portfolio Development", "UI/UX Design"],
+        "IoT & Embedded": ["ESP32", "Sensors Integration", "MQTT", "IoT Protocols", "Smart Systems"],
+        "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "Coursera", "Figma", "Canva", "Adobe Photoshop", "Adobe Illustrator"],
+        "Soft Skills": ["Team Leadership", "Negotiation", "Persuasion", "Active Listening", "Problem Solving"]
+      },
+      "projectsList": [
+        {
+          "title": "Smart Lock System",
+          "category": "IoT & Embedded",
+          "period": "Jan 2025 – Mar 2025",
+          "description": "IoT-based secure access control system using ESP32 microcontroller",
+          "points": [
+            "Designed and developed a smart lock system integrating ESP32 with sensors and IoT for secure access control",
+            "Implemented real-time sensor data processing for authentication and automated locking mechanisms",
+            "Built hardware-software integration pipeline using Python for backend logic and ESP32 for embedded control"
+          ]
+        },
+        {
+          "title": "Online Streaming Platform",
+          "category": "Python Development",
+          "period": "Oct 2024 – Dec 2024",
+          "description": "Python-based streaming application with mood-driven features",
+          "points": [
+            "Built a streaming platform inspired by Python with mood control and emoji depiction capabilities",
+            "Implemented content recommendation logic based on user mood selection and interaction patterns",
+            "Designed intuitive user interface for seamless media streaming and mood-based filtering"
+          ]
+        },
+        {
+          "title": "Personal Portfolio Website",
+          "category": "Web Design",
+          "period": "Aug 2024 – Sept 2024",
+          "description": "Responsive portfolio website built with HTML and CSS",
+          "points": [
+            "Designed and developed a personal portfolio website using HTML for structure and CSS for layout and styling",
+            "Implemented responsive design principles ensuring cross-device compatibility",
+            "Created clean typography and visual hierarchy for professional presentation"
+          ]
+        }
+      ],
+      "achievementsList": [
+        "Working as a Lead Graphic Designer Intern at Match Blindly, creating impactful branding and social media creatives for the startup.",
+        "Hackathon: Participated in 4+ national-level hackathons across North India.",
+        "IEEE Community: Active member of IEEE Community at Chandigarh University.",
+        "Academic Excellence: 96.5% in Class 10 ICSE.",
+        "AlgoWars Coding Competition: Finalist at Chandigarh University."
+      ],
+      "certifications": [
+        "Python Programming Course - Coursera (Problem-solving and project applications)",
+        "IoT Hands-on Workshop - Certificate of Completion, Chandigarh University",
+        "Ethical Hacking Certification - Infosys"
+      ],
+      "extracurricular": [
+        "Active member of IEEE Community, Chandigarh University",
+        "Attended IoT Workshops at Chandigarh University",
+        "Interests: Writing, Sketching, Travelling, Reading",
+        "Languages: English, Hindi",
+        "Volunteered as a Social Media Designer for the C-DAC Bug Bounty 36-Hour Challenge."
+      ],
+      "modules": [
+        {
+          "index": 0,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/c79698246043667.69c386232929b.gif",
+          "alt": "Intro cover animation",
+          "width": 1401,
+          "height": 991
+        },
+        {
+          "index": 1,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/d280a1246043667.69c38b68642c4.png",
+          "alt": "Introduction profile page",
+          "width": 1401,
+          "height": 2565
+        },
+        {
+          "index": 2,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/8fe7e1246043667.69c3810391c1e.gif",
+          "alt": "Project 1 animation",
+          "width": 1401,
+          "height": 1235
+        },
+        {
+          "index": 3,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/c8a417246043667.69bd517ecf330.png",
+          "alt": "Project 1 details",
+          "width": 1401,
+          "height": 3721
+        },
+        {
+          "index": 4,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/4cb70c246043667.69bd517ed01f7.png",
+          "alt": "Project 1 mockups",
+          "width": 1401,
+          "height": 3263
+        },
+        {
+          "index": 5,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/f93b65246043667.69bd517ed2e73.png",
+          "alt": "Project 2 cover",
+          "width": 1401,
+          "height": 2774
+        },
+        {
+          "index": 6,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/921b5e246043667.69c381039290c.png",
+          "alt": "Project 2 branding",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 7,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/600666246043667.69c3810393616.gif",
+          "alt": "Project 2 animation",
+          "width": 1401,
+          "height": 593
+        },
+        {
+          "index": 8,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/138cd8246043667.69bd517ed1e7b.png",
+          "alt": "Project 2 magazine",
+          "width": 1401,
+          "height": 3730
+        },
+        {
+          "index": 9,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/18fa98246043667.69c381038ee9a.gif",
+          "alt": "Project 3 animation",
+          "width": 1401,
+          "height": 1327
+        },
+        {
+          "index": 10,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/e42dd8246043667.69c3810390f21.png",
+          "alt": "Project 3 illustrations",
+          "width": 1401,
+          "height": 3160
+        },
+        {
+          "index": 11,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/05115c246043667.69c38de5763a5.gif",
+          "alt": "Project 4 animation",
+          "width": 1401,
+          "height": 1051
+        },
+        {
+          "index": 12,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/955165246043667.69c38de575f06.png",
+          "alt": "Project 4 character sheets",
+          "width": 1401,
+          "height": 1051
+        },
+        {
+          "index": 13,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/19d35a246043667.69c3810390218.gif",
+          "alt": "Project 5 animation",
+          "width": 1401,
+          "height": 1000
+        },
+        {
+          "index": 14,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/5561d5246043667.69c381038e80a.png",
+          "alt": "Project 5 poster",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 15,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/1ec3ad246043667.69c381039229e.gif",
+          "alt": "Project 6 animation",
+          "width": 1401,
+          "height": 1000
+        },
+        {
+          "index": 16,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/8d7c63246043667.69c381038db45.png",
+          "alt": "Project 6 design",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 17,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/b21c9e246043667.69c381038fb52.png",
+          "alt": "Project 7 illustration",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 18,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/4b6997246043667.69c381038ce03.gif",
+          "alt": "Project 8 animation",
+          "width": 1401,
+          "height": 1000
+        },
+        {
+          "index": 19,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/db0aa8246043667.69c3810393ca3.png",
+          "alt": "Project 8 graphics",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 20,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/94f28d246043667.69bd517ed48d9.png",
+          "alt": "Project 9 cover",
+          "width": 1401,
+          "height": 2774
+        },
+        {
+          "index": 21,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/1bd533246043667.69c6a66ba08ef.png",
+          "alt": "Project 9 layouts",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 22,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/e83da9246043667.69c381038d493.gif",
+          "alt": "Project 10 animation",
+          "width": 1401,
+          "height": 1000
+        },
+        {
+          "index": 23,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/44cc14246043667.69c38103915c9.png",
+          "alt": "Project 10 cover",
+          "width": 1401,
+          "height": 1983
+        },
+        {
+          "index": 24,
+          "type": "image",
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/fa0f74246043667.69c3862328d8e.gif",
+          "alt": "Outro cover animation",
+          "width": 1401,
+          "height": 991
+        }
+      ],
+      "textBlock": {
+        "text": "EMAIL: milleekesarwani10688@gmail.com\n\nLINKEDIN: millee-kesarwani-a92948321\n\nLEETCODE: Millee1_kesarwani\n\nHOPE WE CAN WORK TOGETHER ^^",
+        "links": [
+          {
+            "text": "milleekesarwani10688@gmail.com",
+            "href": "mailto:milleekesarwani10688@gmail.com"
+          },
+          {
+            "text": "millee-kesarwani-a92948321",
+            "href": "https://www.linkedin.com/in/millee-kesarwani-a92948321"
+          },
+          {
+            "text": "Millee1_kesarwani",
+            "href": "https://leetcode.com/u/Millee1_kesarwani"
+          }
+        ]
+      }
+    };
+
+    // State Variables
+    let isAppreciated = localStorage.getItem('behance_project_appreciated') === 'true';
+    let isFollowed = localStorage.getItem('behance_author_followed') === 'true';
+    let currentLightboxIndex = 0;
+    
+    // Core stats parsing helper (e.g. "2.6K" -> 2600)
+    function parseStatValue(statStr) {
+      if (statStr.endsWith('K')) {
+        return parseFloat(statStr) * 1000;
+      }
+      return parseInt(statStr) || 0;
+    }
+
+    // Format stats helper (e.g. 2601 -> "2.6K")
+    function formatStatValue(val) {
+      if (val >= 1000) {
+        return (val / 1000).toFixed(1).replace('.0', '') + 'K';
+      }
+      return val.toString();
+    }
+
+    // Initialize layout
+    function init() {
+      // Load Owner details
+      const owner = behanceData.owner;
+      document.getElementById('header-avatar').src = owner.avatar;
+      document.getElementById('footer-avatar').src = owner.avatar;
+      
+      const authorLinks = document.querySelectorAll('#header-author-name, #footer-profile-name');
+      authorLinks.forEach(el => {
+        el.textContent = owner.name;
+        el.href = owner.url;
+      });
+      document.getElementById('footer-profile-name').textContent = owner.name;
+      document.getElementById('footer-location').textContent = owner.location;
+      
+      // Load Project Title
+      const project = behanceData.project;
+      document.getElementById('header-project-title').textContent = project.title;
+      document.getElementById('overlay-behance-link').href = owner.url; // Fallback to profile URL for embed simulation
+
+      // Load Stats
+      updateStatsDisplay();
+
+      // Load Tools
+      const toolsContainer = document.getElementById('footer-tools-list');
+      behanceData.tools.forEach(tool => {
+        const badge = document.createElement('span');
+        badge.className = 'tool-badge';
+        badge.textContent = tool;
+        toolsContainer.appendChild(badge);
+      });
+
+      // Load Tags
+      const tagsContainer = document.getElementById('footer-tags-list');
+      behanceData.tags.forEach(tag => {
+        const badge = document.createElement('span');
+        badge.className = 'tag-badge';
+        badge.textContent = tag;
+        tagsContainer.appendChild(badge);
+      });
+
+      // Load Text Block
+      const textBlockContent = document.getElementById('text-block-content');
+      let textHtml = behanceData.textBlock.text.replace(/\n/g, '<br>');
+      behanceData.textBlock.links.forEach(lnk => {
+        const pattern = new RegExp(lnk.text, 'g');
+        textHtml = textHtml.replace(pattern, `<a class="text-link" href="${lnk.href}" target="_blank">${lnk.text}</a>`);
+      });
+      textBlockContent.innerHTML = `<p>${textHtml}</p>`;
+
+      // Load Modules (Showcase images/gifs)
+      const modulesContainer = document.getElementById('modules-container');
+      behanceData.modules.forEach(mod => {
+        const moduleDiv = document.createElement('div');
+        moduleDiv.className = 'module';
+        moduleDiv.id = `module-${mod.index}`;
+
+        const img = document.createElement('img');
+        img.className = 'module-img';
+        img.src = mod.src;
+        img.alt = mod.alt;
+        img.loading = 'lazy';
+        img.width = mod.width;
+        img.height = mod.height;
+        
+        // Remove shimmer skeleton loader when image is fully loaded
+        img.onload = () => {
+          moduleDiv.classList.add('loaded');
+        };
+
+        // Open lightbox on click
+        img.addEventListener('click', () => {
+          openLightbox(mod.index);
+        });
+
+        moduleDiv.appendChild(img);
+        modulesContainer.appendChild(moduleDiv);
+      });
+
+      // Load Developer Projects
+      const projectsContainer = document.getElementById('cv-projects-container');
+      behanceData.projectsList.forEach(proj => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        
+        const header = document.createElement('div');
+        header.className = 'project-card-header';
+        
+        const title = document.createElement('h3');
+        title.className = 'project-card-title';
+        title.textContent = proj.title;
+        
+        const cat = document.createElement('span');
+        cat.className = 'project-card-category';
+        cat.textContent = proj.category;
+        
+        const period = document.createElement('span');
+        period.className = 'project-card-period';
+        period.textContent = proj.period;
+        
+        header.appendChild(title);
+        header.appendChild(cat);
+        header.appendChild(period);
+        
+        const desc = document.createElement('p');
+        desc.className = 'project-card-desc';
+        desc.textContent = proj.description;
+        
+        const list = document.createElement('ul');
+        list.className = 'project-card-points';
+        proj.points.forEach(pt => {
+          const item = document.createElement('li');
+          item.textContent = pt;
+          list.appendChild(item);
+        });
+        
+        card.appendChild(header);
+        card.appendChild(desc);
+        card.appendChild(list);
+        projectsContainer.appendChild(card);
+      });
+
+      // Load Skills
+      const skillsContainer = document.getElementById('cv-skills-container');
+      Object.keys(behanceData.skillsList).forEach(cat => {
+        const group = document.createElement('div');
+        group.className = 'skills-group';
+        
+        const title = document.createElement('h4');
+        title.className = 'skills-group-title';
+        title.textContent = cat;
+        
+        const list = document.createElement('div');
+        list.className = 'skills-group-badges';
+        
+        behanceData.skillsList[cat].forEach(skill => {
+          const badge = document.createElement('span');
+          badge.className = 'skill-badge-item';
+          badge.textContent = skill;
+          list.appendChild(badge);
+        });
+        
+        group.appendChild(title);
+        group.appendChild(list);
+        skillsContainer.appendChild(group);
+      });
+
+      // Load Education Timeline
+      const educationContainer = document.getElementById('cv-education-container');
+      behanceData.education.forEach(edu => {
+        const item = document.createElement('div');
+        item.className = 'timeline-item';
+        
+        const node = document.createElement('div');
+        node.className = 'timeline-node';
+        
+        const content = document.createElement('div');
+        content.className = 'timeline-content';
+        
+        const degree = document.createElement('h4');
+        degree.className = 'timeline-degree';
+        degree.textContent = edu.degree;
+        
+        const inst = document.createElement('span');
+        inst.className = 'timeline-institution';
+        inst.textContent = `${edu.institution} (${edu.location})`;
+        
+        const period = document.createElement('span');
+        period.className = 'timeline-period';
+        period.textContent = edu.period;
+        
+        const grade = document.createElement('span');
+        grade.className = 'timeline-grade';
+        grade.textContent = edu.grade;
+        
+        content.appendChild(degree);
+        content.appendChild(inst);
+        content.appendChild(period);
+        content.appendChild(grade);
+        
+        item.appendChild(node);
+        item.appendChild(content);
+        educationContainer.appendChild(item);
+      });
+
+      // Load Achievements & Certifications
+      const achievementsContainer = document.getElementById('cv-achievements-container');
+      
+      const achSub = document.createElement('h3');
+      achSub.className = 'ach-sub-title';
+      achSub.textContent = 'Achievements & Extracurriculars';
+      achievementsContainer.appendChild(achSub);
+      
+      const achList = document.createElement('ul');
+      achList.className = 'achievements-bullets';
+      behanceData.achievementsList.forEach(ach => {
+        const item = document.createElement('li');
+        item.textContent = ach;
+        achList.appendChild(item);
+      });
+      achievementsContainer.appendChild(achList);
+      
+      const certSub = document.createElement('h3');
+      certSub.className = 'ach-sub-title';
+      certSub.style.marginTop = '24px';
+      certSub.textContent = 'Certifications';
+      achievementsContainer.appendChild(certSub);
+      
+      const certList = document.createElement('ul');
+      certList.className = 'certifications-bullets';
+      behanceData.certifications.forEach(cert => {
+        const item = document.createElement('li');
+        item.textContent = cert;
+        certList.appendChild(item);
+      });
+      achievementsContainer.appendChild(certList);
+
+      // Apply initial interactions state
+      applyAppreciateState();
+      applyFollowState();
+
+      // Bind Interaction Event Listeners
+      document.getElementById('header-appreciate-btn').addEventListener('click', toggleAppreciate);
+      document.getElementById('footer-appreciate-btn').addEventListener('click', toggleAppreciate);
+      document.getElementById('header-follow-btn').addEventListener('click', toggleFollow);
+
+      // Lightbox Bindings
+      document.getElementById('lightbox-close-btn').addEventListener('click', closeLightbox);
+      document.getElementById('lightbox-prev-btn').addEventListener('click', showPrevImage);
+      document.getElementById('lightbox-next-btn').addEventListener('click', showNextImage);
+      
+      // Close lightbox on clicking backdrop
+      document.getElementById('gallery-lightbox').addEventListener('click', (e) => {
+        if (e.target.id === 'gallery-lightbox') {
+          closeLightbox();
+        }
+      });
+
+      // Keyboard navigation for Lightbox
+      document.addEventListener('keydown', (e) => {
+        const lightbox = document.getElementById('gallery-lightbox');
+        if (lightbox.classList.contains('active')) {
+          if (e.key === 'ArrowLeft') {
+            showPrevImage();
+          } else if (e.key === 'ArrowRight') {
+            showNextImage();
+          } else if (e.key === 'Escape') {
+            closeLightbox();
+          }
+        }
+      });
+    }
+
+    // Update Stats Render with local appreciate offset
+    function updateStatsDisplay() {
+      const project = behanceData.project;
+      let baseAppreciations = parseStatValue(project.stats.appreciations);
+      
+      if (isAppreciated) {
+        baseAppreciations += 1;
+      }
+      
+      const formattedAppreciations = formatStatValue(baseAppreciations);
+      
+      // Header and Footer items
+      document.getElementById('meta-stat-appreciations').textContent = formattedAppreciations;
+      document.getElementById('profile-stat-appreciations').textContent = formattedAppreciations;
+      
+      document.getElementById('meta-stat-views').textContent = project.stats.views;
+      document.getElementById('profile-stat-views').textContent = project.stats.views;
+      
+      document.getElementById('meta-stat-comments').textContent = project.stats.comments;
+    }
+
+    // Toggle Appreciate State
+    function toggleAppreciate() {
+      isAppreciated = !isAppreciated;
+      localStorage.setItem('behance_project_appreciated', isAppreciated);
+      applyAppreciateState();
+      updateStatsDisplay();
+    }
+
+    // Apply Appreciate CSS Classes & Labels
+    function applyAppreciateState() {
+      const headerBtn = document.getElementById('header-appreciate-btn');
+      const footerBtn = document.getElementById('footer-appreciate-btn');
+      
+      if (isAppreciated) {
+        headerBtn.classList.add('appreciated');
+        headerBtn.querySelector('span').textContent = 'Appreciated';
+        
+        footerBtn.classList.add('appreciated');
+        footerBtn.querySelector('span').textContent = 'Appreciated';
+      } else {
+        headerBtn.classList.remove('appreciated');
+        headerBtn.querySelector('span').textContent = 'Appreciate';
+        
+        footerBtn.classList.remove('appreciated');
+        footerBtn.querySelector('span').textContent = 'Appreciate';
+      }
+    }
+
+    // Toggle Follow State
+    function toggleFollow() {
+      isFollowed = !isFollowed;
+      localStorage.setItem('behance_author_followed', isFollowed);
+      applyFollowState();
+    }
+
+    // Apply Follow CSS Classes & Labels
+    function applyFollowState() {
+      const followBtn = document.getElementById('header-follow-btn');
+      const profileFollowersVal = document.getElementById('profile-stat-followers');
+      
+      if (isFollowed) {
+        followBtn.textContent = 'Following';
+        followBtn.classList.remove('btn-secondary');
+        followBtn.classList.add('btn-primary');
+        followBtn.style.backgroundColor = '#191919';
+        followBtn.style.color = '#ffffff';
+        profileFollowersVal.textContent = '4.3K'; // Simulating follower increment
+      } else {
+        followBtn.textContent = 'Follow';
+        followBtn.classList.remove('btn-primary');
+        followBtn.classList.add('btn-secondary');
+        followBtn.style.backgroundColor = '';
+        followBtn.style.color = '';
+        profileFollowersVal.textContent = '4.2K';
+      }
+    }
+
+    // Lightbox Modal Logic
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lightboxImg = document.getElementById('lightbox-image');
+      
+      // Update image source and metadata
+      const mod = behanceData.modules[currentLightboxIndex];
+      lightboxImg.src = mod.src;
+      lightboxImg.alt = mod.alt;
+      
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Stop scrolling on body
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('gallery-lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; // Resume scrolling
+    }
+
+    function showPrevImage(e) {
+      if (e) e.stopPropagation();
+      const numModules = behanceData.modules.length;
+      currentLightboxIndex = (currentLightboxIndex - 1 + numModules) % numModules;
+      
+      // Visual transition helper
+      const lightboxImg = document.getElementById('lightbox-image');
+      lightboxImg.style.opacity = '0';
+      setTimeout(() => {
+        const mod = behanceData.modules[currentLightboxIndex];
+        lightboxImg.src = mod.src;
+        lightboxImg.alt = mod.alt;
+        lightboxImg.style.opacity = '1';
+      }, 150);
+    }
+
+    function showNextImage(e) {
+      if (e) e.stopPropagation();
+      const numModules = behanceData.modules.length;
+      currentLightboxIndex = (currentLightboxIndex + 1) % numModules;
+      
+      const lightboxImg = document.getElementById('lightbox-image');
+      lightboxImg.style.opacity = '0';
+      setTimeout(() => {
+        const mod = behanceData.modules[currentLightboxIndex];
+        lightboxImg.src = mod.src;
+        lightboxImg.alt = mod.alt;
+        lightboxImg.style.opacity = '1';
+      }, 150);
+    }
+
+    // Initialize the app on load
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
